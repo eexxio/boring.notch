@@ -5,6 +5,7 @@
 //  Created by Hugo Persson on 2024-08-25.
 //
 
+import Defaults
 import SwiftUI
 
 struct TabModel: Identifiable {
@@ -21,10 +22,20 @@ let tabs = [
 
 struct TabSelectionView: View {
     @ObservedObject var coordinator = BoringViewCoordinator.shared
+    @Default(.enableClipboardHistory) private var enableClipboardHistory
     @Namespace var animation
+
+    private var availableTabs: [TabModel] {
+        var result = tabs
+        if enableClipboardHistory {
+            result.append(TabModel(label: "Clipboard", icon: "clipboard", view: .clipboard))
+        }
+        return result
+    }
+
     var body: some View {
         HStack(spacing: 0) {
-            ForEach(tabs) { tab in
+            ForEach(availableTabs) { tab in
                     TabButton(label: tab.label, icon: tab.icon, selected: coordinator.currentView == tab.view) {
                         withAnimation(.smooth) {
                             coordinator.currentView = tab.view

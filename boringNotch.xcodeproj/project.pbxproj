@@ -143,6 +143,10 @@
 		B1F747F92EC7E94000F841DB /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F747F82EC7E94000F841DB /* LottieView.swift */; };
 		B1FEB4992C7686630066EBBC /* PanGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FEB4982C7686630066EBBC /* PanGesture.swift */; };
 		F38DE6482D8243E7008B5C6D /* BatteryActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38DE6472D8243E2008B5C6D /* BatteryActivityManager.swift */; };
+		C1B0AD010000000000000011 /* ClipboardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B0AD020000000000000011 /* ClipboardItem.swift */; };
+		C1B0AD010000000000000012 /* ClipboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B0AD020000000000000012 /* ClipboardManager.swift */; };
+		C1B0AD010000000000000013 /* ClipboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B0AD020000000000000013 /* ClipboardView.swift */; };
+		C1B0AD010000000000000014 /* ClipboardSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B0AD020000000000000014 /* ClipboardSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -309,6 +313,10 @@
 		B1F747F82EC7E94000F841DB /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		B1FEB4982C7686630066EBBC /* PanGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanGesture.swift; sourceTree = "<group>"; };
 		F38DE6472D8243E2008B5C6D /* BatteryActivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryActivityManager.swift; sourceTree = "<group>"; };
+		C1B0AD020000000000000011 /* ClipboardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardItem.swift; sourceTree = "<group>"; };
+		C1B0AD020000000000000012 /* ClipboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardManager.swift; sourceTree = "<group>"; };
+		C1B0AD020000000000000013 /* ClipboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardView.swift; sourceTree = "<group>"; };
+		C1B0AD020000000000000014 /* ClipboardSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -489,6 +497,7 @@
 				B141C23B2CA5F50900AC8CC8 /* Onboarding */,
 				B1C448992C97375A001F0858 /* Tips */,
 				14C08BB72C8DE49E000F8AA0 /* Calendar */,
+				C1B0AD030000000000000013 /* Clipboard */,
 				9A987A042C73CA66005CA465 /* Shelf */,
 				149E0B982C737D26006418B1 /* Webcam */,
 				B18654312C6F45AE000B926A /* Live activities */,
@@ -516,6 +525,7 @@
 				147163992C5D35FF0068B555 /* MusicManager.swift */,
 				149E0B962C737D00006418B1 /* WebcamManager.swift */,
 				14C08BB52C8DE42D000F8AA0 /* CalendarManager.swift */,
+				C1B0AD020000000000000012 /* ClipboardManager.swift */,
 				B1F0A0012E60000100000001 /* BrightnessManager.swift */,
 				59D8C23B2E589FAA00147B33 /* VolumeManager.swift */,
 			);
@@ -536,6 +546,14 @@
 				14C08BB82C8DE4B1000F8AA0 /* BoringCalendar.swift */,
 			);
 			path = Calendar;
+			sourceTree = "<group>";
+		};
+		C1B0AD030000000000000013 /* Clipboard */ = {
+			isa = PBXGroup;
+			children = (
+				C1B0AD020000000000000013 /* ClipboardView.swift */,
+			);
+			path = Clipboard;
 			sourceTree = "<group>";
 		};
 		14CEF4092C5CAED200855D72 = {
@@ -634,6 +652,7 @@
 				14D570C82C5F38890011E668 /* BoringViewModel.swift */,
 				14D570CA2C5F4B2C0011E668 /* BatteryStatusViewModel.swift */,
 				1153BD902D986DB300979FB0 /* PlaybackState.swift */,
+				C1B0AD020000000000000011 /* ClipboardItem.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -721,6 +740,7 @@
 				11C5E3152DFE88510065821E /* SettingsView.swift */,
 				11C5E3112DFE85970065821E /* SettingsWindowController.swift */,
 				B1D6FD422C6603730015F173 /* SoftwareUpdater.swift */,
+				C1B0AD020000000000000014 /* ClipboardSettings.swift */,
 				B1B112902C6A572100093D8F /* EditPanelView.swift */,
 				B1C448972C972CC4001F0858 /* ListItemPopover.swift */,
 			);
@@ -1020,6 +1040,10 @@
 				1100290C2E847E2800035A57 /* NSItemProvider+LoadHelpers.swift in Sources */,
 				11CFC6632E09918400748C80 /* MusicControllerSelectionView.swift in Sources */,
 				B1F0A0022E60000100000001 /* BrightnessManager.swift in Sources */,
+				C1B0AD010000000000000011 /* ClipboardItem.swift in Sources */,
+				C1B0AD010000000000000012 /* ClipboardManager.swift in Sources */,
+				C1B0AD010000000000000013 /* ClipboardView.swift in Sources */,
+				C1B0AD010000000000000014 /* ClipboardSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
