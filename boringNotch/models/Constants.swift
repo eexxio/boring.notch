@@ -177,6 +177,10 @@ extension Defaults.Keys {
     static let showFullEventTitles = Key<Bool>("showFullEventTitles", default: false)
     static let autoScrollToNextEvent = Key<Bool>("autoScrollToNextEvent", default: true)
     
+    // MARK: Clipboard History
+    static let enableClipboardHistory = Key<Bool>("enableClipboardHistory", default: true)
+    static let clipboardHistoryLimit = Key<Int>("clipboardHistoryLimit", default: 50)
+    
     // MARK: Fullscreen Media Detection
     static let hideNotchOption = Key<HideNotchOption>("hideNotchOption", default: .nowPlayingOnly)
     
